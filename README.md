@@ -12,7 +12,7 @@
         "500g fromage blanc egouté",
         "1 oeuf",
         "2 c.s.de la farine",
-        "sucre selon le gout"
+        "sucre selon le goût"
     ],
     "steps": [
         "Melanger les ingredients",
