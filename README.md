@@ -9,9 +9,9 @@
     "difficultyLevel": "LOW",
     "imageUrl": "https://langueszone.files.wordpress.com/2014/06/syrniki.jpg",
     "ingredients": [
-        "500g fromage blanc egouté",
+        "400g fromage blanc egouté",
         "1 oeuf",
-        "2 c.s.de la farine",
+        "3 c.s.de la farine",
         "sucre selon le goût"
     ],
     "steps": [
