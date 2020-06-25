@@ -1,4 +1,4 @@
-# recipes
+# Syrniki - Russian breakfast dish
 ## To test in postman with this json: 
 ```
 {
