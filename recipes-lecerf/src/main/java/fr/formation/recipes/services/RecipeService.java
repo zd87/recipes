@@ -2,7 +2,9 @@ package fr.formation.recipes.services;
 
 import org.springframework.stereotype.Service;
 
+import fr.formation.recipes.dtos.IngredientDto;
 import fr.formation.recipes.dtos.RecipeDto;
+import fr.formation.recipes.dtos.StepDto;
 import fr.formation.recipes.entities.Ingredient;
 import fr.formation.recipes.entities.Recipe;
 import fr.formation.recipes.entities.Step;
@@ -38,13 +40,14 @@ public class RecipeService implements IRecipeService {
 	// retrieveing the new recipe by its name
 	Recipe savedRecipe = recipes.findByRecipeName(recipeDto.getName());
 	// persisting ingredients
-	for (String wording : recipeDto.getIngredients()) {
-	    ingredients.save(new Ingredient(savedRecipe, wording));
+	for (IngredientDto ingredient : recipeDto.getIngredients()) {
+	    ingredients
+		    .save(new Ingredient(savedRecipe, ingredient.getWording()));
 	}
-	// persisting steps, order is index+1
-	for (String wording : recipeDto.getSteps()) {
-	    steps.save(new Step(savedRecipe, wording,
-		    recipeDto.getSteps().indexOf(wording) + 1));
+	// persisting steps
+	for (StepDto step : recipeDto.getSteps()) {
+	    steps.save(
+		    new Step(savedRecipe, step.getWording(), step.getOrder()));
 	}
     }
 }

@@ -2,10 +2,10 @@ package fr.formation.recipes.dtos;
 
 import java.util.List;
 
+import javax.validation.Valid;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -38,11 +38,11 @@ public class RecipeDto {
     @Size(min = 7, max = 2500)
     private String imageUrl;
 
-    @NotEmpty
-    List<String> ingredients;
+    @Size(min = 1, max = 50)
+    List<@Valid IngredientDto> ingredients;
 
-    @NotEmpty
-    List<String> steps;
+    @Size(min = 1, max = 50)
+    List<@Valid StepDto> steps;
 
     public RecipeDto() {
     }
@@ -95,19 +95,19 @@ public class RecipeDto {
 	this.imageUrl = imageUrl;
     }
 
-    public List<String> getIngredients() {
+    public List<IngredientDto> getIngredients() {
 	return ingredients;
     }
 
-    public void setIngredients(List<String> ingredients) {
+    public void setIngredients(List<IngredientDto> ingredients) {
 	this.ingredients = ingredients;
     }
 
-    public List<String> getSteps() {
+    public List<StepDto> getSteps() {
 	return steps;
     }
 
-    public void setSteps(List<String> steps) {
+    public void setSteps(List<StepDto> steps) {
 	this.steps = steps;
     }
 }
