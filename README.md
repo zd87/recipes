@@ -21,4 +21,4 @@
     ]
 }
 ```
-## P.S. Also it is a legit tasty recipe for breakfast
+## P.S. It is a legit tasty recipe for breakfast
