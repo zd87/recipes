@@ -2,7 +2,7 @@
 ## To test in postman with this json: 
 ```
 {
-    "name": "Syrniki13",
+    "name": "Syrniki",
     "preparingTime": 10,
     "cookingTime": 15,
     "servings": 4,
