@@ -28,7 +28,7 @@
             "order": 1
         },
         {
-            "wording": "Former des petit disques",
+            "wording": "Former des petits disques",
             "order": 2
         },
         {
