@@ -16,10 +16,10 @@
             "wording": "1 oeuf"
         },
         {
-            "wording": "2 c.s.de la farine"
+            "wording": "3 c.s.de la farine"
         },
         {
-            "wording": "sucre selon le gout"
+            "wording": "sucre selon le gout (3 c.s. pour les gourmands)"
         }
     ],
     "steps": [
