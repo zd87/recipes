@@ -1,13 +1,12 @@
-package fr.formation.recipes;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-class RecipesLecerfApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
+/*
+ * DELETE IF TESTS WELL package fr.formation.recipes;
+ *
+ * import org.junit.jupiter.api.Test; import
+ * org.springframework.boot.test.context.SpringBootTest;
+ *
+ * @SpringBootTest class RecipesLecerfApplicationTests {
+ *
+ * @Test void contextLoads() { }
+ *
+ * }
+ */
