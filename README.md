@@ -9,15 +9,32 @@
     "difficultyLevel": "LOW",
     "imageUrl": "https://langueszone.files.wordpress.com/2014/06/syrniki.jpg",
     "ingredients": [
-        "400g fromage blanc egouté",
-        "1 oeuf",
-        "3 c.s.de la farine",
-        "sucre selon le goût"
+        {
+            "wording": "400g fromage blanc egouté"
+        },
+        {
+            "wording": "1 oeuf"
+        },
+        {
+            "wording": "3 c.s.de la farine"
+        },
+        {
+            "wording": "sucre selon le gout (3 c.s. pour les gourmands)"
+        }
     ],
     "steps": [
-        "Melanger les ingredients",
-        "Former des petit disques",
-        "Griller à la poêle jusqu'à la couleur dorée"
+        {
+            "wording": "Melanger les ingredients",
+            "order": 1
+        },
+        {
+            "wording": "Former des petits disques",
+            "order": 2
+        },
+        {
+            "wording": "Griller à la poêle jusqu'à la couleur dorée",
+            "order": 3
+        }
     ]
 }
 ```
