@@ -37,17 +37,14 @@ public class RecipeService implements IRecipeService {
 		recipeDto.getDifficultyLevel());
 	// persisting recipe
 	recipes.save(newRecipe);
-	// retrieving the new recipe by its name
-	Recipe savedRecipe = recipes.findByRecipeName(recipeDto.getName());
 	// persisting ingredients
 	for (IngredientDto ingredient : recipeDto.getIngredients()) {
 	    ingredients
-		    .save(new Ingredient(savedRecipe, ingredient.getWording()));
+		    .save(new Ingredient(newRecipe, ingredient.getWording()));
 	}
 	// persisting steps
 	for (StepDto step : recipeDto.getSteps()) {
-	    steps.save(
-		    new Step(savedRecipe, step.getWording(), step.getOrder()));
+	    steps.save(new Step(newRecipe, step.getWording(), step.getOrder()));
 	}
     }
 }
