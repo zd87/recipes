@@ -39,10 +39,10 @@ public class RecipeDto {
     private String imageUrl;
 
     @Size(min = 1, max = 50)
-    List<@Valid IngredientDto> ingredients;
+    private List<@Valid IngredientDto> ingredients;
 
     @Size(min = 1, max = 50)
-    List<@Valid StepDto> steps;
+    private List<@Valid StepDto> steps;
 
     public RecipeDto() {
     }

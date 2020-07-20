@@ -21,7 +21,7 @@ public class RecipeController {
     }
 
     @PostMapping
-    public void create(@Valid @RequestBody RecipeDto recipeDto) {
-	recipeService.create(recipeDto);
+    public RecipeDto create(@Valid @RequestBody RecipeDto recipeDto) {
+	return recipeDto;
     }
 }
