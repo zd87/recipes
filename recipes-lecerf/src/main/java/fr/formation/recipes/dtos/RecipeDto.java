@@ -41,7 +41,7 @@ public class RecipeDto {
     @Size(min = 1, max = 50)
     private List<@Valid IngredientDto> ingredients;
 
-    @Size(min = 1, max = 50)
+    @Size(min = 1, max = 20)
     private List<@Valid StepDto> steps;
 
     public RecipeDto() {
